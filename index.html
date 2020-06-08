@@ -44,4 +44,11 @@
         element.classList.toggle("dark-mode");
     }
 </script>
+<script>
+    var element = document.body;
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    element.classList.toggle("dark-mode");
+}
+</script>
 </html>
