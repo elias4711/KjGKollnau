@@ -4,6 +4,7 @@ body {
   padding: 50px;
   margin: 0;
   font-family: 'montserrat', sans-serif;
+  color: #353535;
 }
 
 .dark-mode {
@@ -13,6 +14,17 @@ body {
 
 .dark-mode .icon {
   fill: #fff;
+}
+
+.dark-mode textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: calc(100% - 6px);
+  height: 50px;
+  font-family: 'montserrat', sans-serif;
+  color: #fff;
+  outline: none;
+  margin-top: -27px;
 }
 
 .centerdiv {
@@ -91,6 +103,28 @@ body {
 }
 
 .question .qacontainer {
-  height: 150px;
+  margin: 20px 0px;
+}
+
+textarea {
+  background-color: transparent;
+  border: 1px solid #353535;
+  width: calc(100% - 6px);
+  height: 50px;
+  font-family: 'montserrat', sans-serif;
+  color: #353535;
+  outline: none;
+  margin-top: -27px;
+}
+
+.button {
+  padding: 15px 25px;
+  background-color: #0084ff;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-top: -5px;
+  color: white;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
