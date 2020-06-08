@@ -86,8 +86,8 @@ body {
   width: 16px;
   height: auto;
   position: relative;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .question .qacontainer {
