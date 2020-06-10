@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0px 25px 100px 25px;
-    background-color: #efefef;
+    background-color: #f4f9ff;
     opacity: 1;
 
 .helloPopup {
@@ -27,10 +27,11 @@ body {
     background-color: #ffffff;
     padding: 25px 35px;
     border-radius: 10px;
-    box-shadow: 0px 25px 20px #35353516;
+    box-shadow: 0px 25px 20px #0086ff25;
     min-width: 300px;
     width: 370px;
     align-items: center;
+    border-bottom: 2px solid #0086ff;
     img {
         width: 45px;
         height: auto;
@@ -41,9 +42,11 @@ body {
         flex-direction: column;
         h1 {
             font-size: 20px;
+            color: #353535;
         }
         p {
             font-size: 14px;
+            color: #7a7a7a;
         }
     }
 }
