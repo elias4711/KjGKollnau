@@ -101,6 +101,7 @@ nav {
     a:active {
         background-color: #0086ff16;
         border-radius: 5px;
+        font-weight: 500;
     }
     .mobileMenu {
         display: none
@@ -109,23 +110,24 @@ nav {
 
 @media screen and (max-width: 767px) {
     .forMobile {
-        background-color: #f4f9ff;
-        height: calc(100vh - 100px);
-        position: fixed;
+        background-color: #ffffff;
+        box-shadow: 0px -15px 20px #07365f16;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        position: absolute;
         bottom: 0;
         right: 0;
         left: 0;
         display: flex;
         flex-direction: column;
         width: 100vw;
-        z-index: -100;
+        z-index: -10;
         text-align: center;
         transition: .3s ease-in-out;
-    }
-    .hide {
-        position: fixed;
-        left: -100vw !important;
-        transition: .3s ease-in-out;
+        padding: 50px 0px 30px 0px;
+        a {
+            padding: 20px 0px;
+        }
     }
     nav {
         padding: 30px 50px;
@@ -143,21 +145,43 @@ nav {
             }
         }
     }
+    .hide {
+        display: none;
+    }
     .onClick {
-        height: 0px !important;
-        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px; 
+        height: 40px;
+        z-index: 1;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 10px #35353516;
+        border-radius: 40px;
+        position: relative;
+        top: 51vh;
+        right: 33vw;
         .line1 {
+            z-index: 5;
             transform: rotateZ(45deg);
             transition: .3s ease-in-out;
+            background-color: #0086ff;
+            border: 1px solid #0086ff;
+            width: 20px;
             position: relative;
-            top: 4px;
+            top: 2px;
         }
         .line2 {
             opacity: 0;
         }
         .line3 {
+            z-index: 5;
             transform: rotateZ(-45deg);
             transition: .3s ease-in-out;
+            background-color: #0086ff;
+            border: 1px solid #0086ff;
+            width: 20px;
         }
     }
 }
