@@ -122,18 +122,24 @@ nav img {
 
 nav a {
   text-decoration: none;
-  color: #353535;
-  padding: 40px 15px;
+  color: #0086ff;
   font-size: 14px;
-  border-bottom: 0px solid #0086ff;
-  font-weight: normal;
+  padding: 15px 15px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 nav a:hover {
-  border-bottom: 2px solid #0086ff;
-  font-weight: 800;
-  -webkit-transition: border .3s ease-in-out;
-  transition: border .3s ease-in-out;
+  background-color: #f4f9ff;
+  border-radius: 5px;
+  font-weight: 500;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+nav a:active {
+  background-color: #0086ff16;
+  border-radius: 5px;
 }
 
 nav .mobileMenu {
