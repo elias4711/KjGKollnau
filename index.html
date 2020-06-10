@@ -3,52 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
-    <title>KjGKollnau</title>
+    <title>KjG Kollnau</title>
 </head>
 <body>
-    <div class="centerdiv">
-        <div style="height: 10vh;">
-            <button class="icon" style="border: none; background-color: transparent; outline: none;" onclick="darkmode()">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"/></svg>
-            </button>
-        </div>
-    <h1>Die Webseite der KjG Kollnau ist derzeit offline.</h1>
-        <hr style="width: 50px; border: 2px solid #0084ff; border-radius: 5px;">
-    <p>Die Webseite wird neu aufgebaut und mit Aktuellen Daten geschmückt.<br> Bei Fragen stehen wir Ihnen trotzdem gerne zur verfügung.</p>
-    <!-- Frage Section -->
-    <div class="question">
-        <div class="qacontainer">
-            <h1>
-                Wünsche zur Webseite
-            </h1>
-            <a class="button" href="mailto:eliasenglen2@gmail.com">Kontakt <img src="src/static/img/mail.svg" alt="arrow"></a>
-        </div>
-        <div class="qacontainer">
-            <h1>
-                Organisatorische Fragen
-            </h1>
-            <a class="button" href="mailto:kjgkollnau@gmail.com?subject=Organisatorische Frage">Kontakt <img src="src/static/img/mail.svg" alt="arrow"></a>
-            
+    <div class="popupContainer">
+        <div class="helloPopup">
+        <img src="src/static/img/hello.png" alt="hello">
+        <div class="textAlign">
+            <h1>Hallo !</h1>
+            <p> Willkommen auf der neuen Webseite der KjG Kollnau.</p>
         </div>
     </div>
     </div>
-
     
+    <!-- inline Scripts -->
+    <script>
+    var popupBg = document.querySelector(".popupContainer"); 
+    var popup = document.querySelector(".helloPopup"); 
+
+    setTimeout (function() {
+    popupBg.classList.add("animateOut") },
+    2000);
+    
+    setTimeout (function() {
+    popup.classList.add("popupOut") },
+    1500);
+    
+    </script>
 </body>
-
-<script>
-    function darkmode(){
-    var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
-</script>
-<script>
-    var element = document.body;
-    
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    element.classList.toggle("dark-mode");
-}
-</script>
 </html>
