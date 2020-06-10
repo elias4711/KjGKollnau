@@ -7,9 +7,12 @@
 body {
     font-family: 'montserrat', sans-serif;
     overflow-x: hidden;
+    z-index: auto;
 }
 
 .popupContainer {
+    position: relative;
+    top: 0vh;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,6 +20,7 @@ body {
     padding: 0px 25px 100px 25px;
     background-color: #f4f9ff;
     opacity: 1;
+    z-index: 10;
 
 .helloPopup {
     position: relative;
@@ -27,7 +31,7 @@ body {
     background-color: #ffffff;
     padding: 25px 35px;
     border-radius: 10px;
-    box-shadow: 0px 25px 20px #0086ff25;
+    box-shadow: 0px 25px 20px #0086ff20;
     min-width: 300px;
     width: 370px;
     align-items: center;
@@ -53,12 +57,103 @@ body {
 }
 
 .animateOut {
+    position: absolute;
+    top: -100vh !important;
+    left: 0;
+    right: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .popupOut {
     position: relative;
     right: -100vw !important;
     transition: right 1s ease-in-out;
+}
+
+// Main Css
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 100px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px #35353516;
+    align-items: center;
+    z-index: 2;
+    img {
+        height: 40px;
+    }
+    a {
+        text-decoration: none;
+        color: #353535;
+        padding: 40px 15px;
+        font-size: 14px;
+        border-bottom: 0px solid #0086ff;
+        font-weight: normal;
+    }
+    a:hover {
+        border-bottom: 2px solid #0086ff;
+        font-weight: 800;
+        transition: border .3s ease-in-out;
+    }   
+    .mobileMenu {
+        display: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .forMobile {
+        background-color: #f4f9ff;
+        height: calc(100vh - 100px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        z-index: -100;
+        text-align: center;
+        transition: .3s ease-in-out;
+    }
+    .hide {
+        position: fixed;
+        left: -100vw !important;
+        transition: .3s ease-in-out;
+    }
+    nav {
+        padding: 30px 50px;
+        .mobileMenu{
+            display: flex;
+            flex-direction: column;
+            width: 25px;
+            height: 30px;
+            justify-content: space-evenly;
+            .line1, .line2, .line3 {
+                background-color: #0086ff;
+                border: 1px solid #0086ff;
+                border-radius: 3px;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+    .onClick {
+        height: 0px !important;
+        margin-bottom: 5px;
+        .line1 {
+            transform: rotateZ(45deg);
+            transition: .3s ease-in-out;
+            position: relative;
+            top: 4px;
+        }
+        .line2 {
+            opacity: 0;
+        }
+        .line3 {
+            transform: rotateZ(-45deg);
+            transition: .3s ease-in-out;
+        }
+    }
 }

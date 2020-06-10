@@ -8,6 +8,8 @@
     <title>KjG Kollnau</title>
 </head>
 <body>
+
+    <!-- Einstiegs Popup -->
     <div class="popupContainer">
         <div class="helloPopup">
         <img src="src/static/img/hello.png" alt="hello">
@@ -17,7 +19,25 @@
         </div>
     </div>
     </div>
-    
+
+    <!-- Navigation -->
+    <nav>
+        <div><img src="src/static/img/kjg_logo.svg" alt="logo"></div>
+        <div id="menu" class="forMobile hide">
+            <a href="#home">Startseite</a>
+            <a href="#sommerlager">Sommerlager</a>
+            <a href="#gruppenstunde">Gruppenstunden</a>
+            <a href="#leiter">Die Leiter</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+        <div id="hamburger" class="mobileMenu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
     <!-- inline Scripts -->
     <script>
     var popupBg = document.querySelector(".popupContainer"); 
@@ -31,6 +51,25 @@
     popup.classList.add("popupOut") },
     2000);
     
+    </script>
+
+    <script>
+    var hamburger = document.getElementById('hamburger');    
+    var menu = document.getElementById('menu');
+
+    document.getElementById('hamburger').addEventListener('click', navStatus);
+
+    function navStatus() {
+        if (hamburger.classList.contains('onClick')) {
+            hamburger.classList.remove("onClick");
+            menu.classList.add("hide");
+        } 
+        else {
+            hamburger.classList.add("onClick");
+            menu.classList.remove("hide");
+        }
+    }
+
     </script>
 </body>
 </html>
