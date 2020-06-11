@@ -21,6 +21,8 @@ body {
     background-color: #f4f9ff;
     opacity: 1;
     z-index: 10;
+    overflow: hidden;
+    position: fixed;
 
 .helloPopup {
     position: relative;
@@ -123,7 +125,7 @@ nav {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        z-index: -10;
+        z-index: 200;
         text-align: center;
         transition: .3s ease-in-out;
         padding: 0px 0px 30px 0px;
@@ -228,6 +230,70 @@ nav {
 }
 }
 
+#leiterPopup{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -45vw;;
+}
+
+.popupBG {
+    background-color: #fff;
+    box-shadow: 0px -20px 20px #35353516;
+    padding: 0px 25px 50px 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 90vw;
+    margin: 0 auto;
+    transition: position .3s ease-in-out;
+}
+
 .LeiterPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .Pupupimg {
+        border-radius: 75px;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top: -7vh;
+        border: 5px solid #fff;
+        box-shadow: 0px 20px 20px #35353516;
+    }
+    p {
+        line-height: 36px;
+        color: #353535;
+    }
+    .position {
+        position: relative;
+        top: -17vh;
+        padding: 10px 20px;
+        background-color: #f1425f;
+        color: white;
+        border-radius: 20px;
+    }
+    .close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        margin: 0 auto;
+        box-shadow: 0px 20px 20px #35353516;
+        z-index: 150;
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.hidePop {
     display: none;
 }
