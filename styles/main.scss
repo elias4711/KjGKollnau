@@ -184,3 +184,47 @@ nav {
         }
     }
 }
+
+#leiterlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+.leiter {
+    background-color: #fff;
+    box-shadow: 0px 20px 20px #35353516;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 20px 25px;
+    margin: 20px;
+    .imgdiv{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        border: 5px solid #fff;
+        box-shadow: 0px 10px 10px #35353516;
+        position: relative;
+        top: -2.5vh;
+        img {
+            width: 200px;
+        }
+    }
+    .leiter-name {
+        font-size: 20px;
+        color: #353535;
+        margin-bottom: 5px;
+        span {
+            color: #7a7a7a;
+        }
+    }
+}
+}

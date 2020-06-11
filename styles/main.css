@@ -256,4 +256,75 @@ nav .mobileMenu {
     width: 20px;
   }
 }
+
+#leiterlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#leiterlist .leiter {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 20px 20px #35353516;
+          box-shadow: 0px 20px 20px #35353516;
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 25px 20px 25px;
+  margin: 20px;
+}
+
+#leiterlist .leiter .imgdiv {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0px 10px 10px #35353516;
+          box-shadow: 0px 10px 10px #35353516;
+  position: relative;
+  top: -2.5vh;
+}
+
+#leiterlist .leiter .imgdiv img {
+  width: 200px;
+}
+
+#leiterlist .leiter .leiter-name {
+  font-size: 20px;
+  color: #353535;
+  margin-bottom: 5px;
+}
+
+#leiterlist .leiter .leiter-name span {
+  color: #7a7a7a;
+}
 /*# sourceMappingURL=main.css.map */
