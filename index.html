@@ -24,6 +24,10 @@
     <nav>
         <div><img src="src/static/img/kjg_logo.svg" alt="logo"></div>
         <div id="menu" class="forMobile hide">
+            <div id="cross" onclick="navStatus()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
             <a href="#home">Startseite</a>
             <a href="#sommerlager">Sommerlager</a>
             <a href="#gruppenstunde">Gruppenstunden</a>
@@ -56,17 +60,18 @@
     <script>
     var hamburger = document.getElementById('hamburger');    
     var menu = document.getElementById('menu');
+    var cross = document.getElementById('cross');
 
     document.getElementById('hamburger').addEventListener('click', navStatus);
 
     function navStatus() {
-        if (hamburger.classList.contains('onClick')) {
-            hamburger.classList.remove("onClick");
+        if (cross.classList.contains('onClick')) {
+            cross.classList.remove("onClick");
             hamburger.classList.add("mobileMenu");
             menu.classList.add("hide");
         } 
         else {
-            hamburger.classList.add("onClick");
+            cross.classList.add("onClick");
             hamburger.classList.remove("mobileMenu");
             menu.classList.remove("hide");
         }
