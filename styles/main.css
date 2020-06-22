@@ -346,9 +346,13 @@ nav .mobileMenu {
   margin: 0 auto;
   -webkit-transition: position .3s ease-in-out;
   transition: position .3s ease-in-out;
+  position: relative;
+  bottom: -5vh;
 }
 
 .LeiterPopup {
+  position: relative;
+  top: -5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
