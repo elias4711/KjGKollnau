@@ -11,7 +11,7 @@
 <body>
 
     <!-- Einstiegs Popup -->
-    <div class="popupContainer">
+    <div id="firstPop" class="popupContainer">
         <div class="helloPopup">
         <img src="src/static/img/hello.png" alt="hello">
         <div class="textAlign">
@@ -51,9 +51,11 @@
     <script>
     var popupBg = document.querySelector(".popupContainer"); 
     var popup = document.querySelector(".helloPopup");
+    var firstpopup = document.getElementById("firstPop");
     
     setTimeout (function() {
-    popupBg.classList.add("animateOut");},
+    popupBg.classList.add("animateOut");
+    firstpopup.remove("firstPop");},
     2500);
     
     setTimeout (function() {
@@ -72,12 +74,12 @@
     function navStatus() {
         if (cross.classList.contains('onClick')) {
             cross.classList.remove("onClick");
-            hamburger.classList.add("mobileMenu");
+            hamburger.classList.add("hide");
             menu.classList.add("hide");
         } 
         else {
             cross.classList.add("onClick");
-            hamburger.classList.remove("mobileMenu");
+            hamburger.classList.remove("hide");
             menu.classList.remove("hide");
         }
     }

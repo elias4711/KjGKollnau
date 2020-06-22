@@ -175,16 +175,18 @@ function popupHandler(key) {({
             key: this.id,
         });
         const filteredData = leiterData[key];
-        console.log(filteredData)   
-        
-        return document.getElementById("leiterPopup").innerHTML = `
-        <div class="popupBG" style="display:flex;">
+        console.log(filteredData)
+        const leiterPop = document.getElementById("leiterPopup");
+        leiterPop.classList.remove("hide");
+
+        return leiterPop.innerHTML = `
+        <div class="popupBG" id="PopUpId" style="display:flex;">
         <div class="LeiterPopup">
             <div class="Pupupimg">
                 <img src="${filteredData.foto}">
             </div>
-            <h1 class="Popupheading">${filteredData.name}</h1>
             <span class="position">${filteredData.position}</span>
+            <h1 class="Popupheading">${filteredData.name}</h1>
             <div class="PopInfo">
             <p><strong>Geburtstag: </strong>${filteredData.geburtstag}</p>
             <p><strong>Lieblingsessen: </strong>${filteredData.lieblingsessen}</p>
@@ -192,11 +194,17 @@ function popupHandler(key) {({
             <p><strong>Spitzname: </strong>${filteredData.spitzname}</p>
             <p><strong>Beitritt in der KJG: </strong>${filteredData.beitritt}</p>
             <br>
-            <div class="close" onClick="close()" >
+            <div class="close" id="close">
                 <img src="src/static/img/close.svg">
             </div>
             </div>
         </div>
         </div>`
+        
 };
 
+const leiterPop = document.getElementById("leiterPopup");
+
+document.getElementById("leiterPopup").addEventListener("click", function() {
+    leiterPop.classList.add("hide");
+  });
