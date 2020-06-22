@@ -147,6 +147,10 @@ nav .mobileMenu {
   display: none;
 }
 
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .forMobile {
     background-color: #ffffff;
@@ -158,9 +162,7 @@ nav .mobileMenu {
     bottom: 0;
     right: 0;
     left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -181,6 +183,9 @@ nav .mobileMenu {
   .forMobile a {
     padding: 20px 0px;
     width: 100%;
+  }
+  .hide {
+    display: none;
   }
   nav {
     padding: 30px 50px;
@@ -205,9 +210,6 @@ nav .mobileMenu {
     border-radius: 3px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
-  }
-  .hide {
-    display: none;
   }
   .onClick {
     display: -webkit-box;

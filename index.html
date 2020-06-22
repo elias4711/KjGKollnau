@@ -24,7 +24,7 @@
     <!-- Navigation -->
     <nav>
         <div><img src="src/static/img/kjg_logo.svg" alt="logo"></div>
-        <div id="menu" class="forMobile hide">
+        <div id="menu" class="forMobile">
             <div id="cross" class="cross" onclick="navStatus()">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -75,15 +75,14 @@
         if (cross.classList.contains('onClick')) {
             cross.classList.remove("onClick");
             hamburger.classList.add("hide");
-            menu.classList.add("hide");
+            menu.setAttribute("style", "display: none;");
         } 
         else {
             cross.classList.add("onClick");
             hamburger.classList.remove("hide");
-            menu.classList.remove("hide");
+            menu.setAttribute("style", "display: flex;");
         }
     }
-
     </script>
 
 </body>

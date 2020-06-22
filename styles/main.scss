@@ -107,7 +107,9 @@ nav {
         display: none
     }
 }
-
+.hide {
+    display: none;
+}
 @media screen and (max-width: 767px) {
     .forMobile {
         background-color: #ffffff;
@@ -118,7 +120,7 @@ nav {
         bottom: 0;
         right: 0;
         left: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -131,6 +133,9 @@ nav {
             padding: 20px 0px;
             width: 100%;
         }
+    }
+    .hide {
+        display: none;
     }
     nav {
         padding: 30px 50px;
@@ -147,9 +152,6 @@ nav {
                 transition: .3s ease-in-out;
             }
         }
-    }
-    .hide {
-        display: none;
     }
     .onClick {
         display: flex;
