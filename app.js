@@ -152,7 +152,128 @@ const leiterData = [
             spitzname: "Jule",
             beitritt: "2017",
             foto: "src/static/img/leiterfill.svg"
-        }
+        },
+        {
+            id: "14",
+            name: "Franka Heckner",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "15",
+            name: "Sofia Timm",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "16",
+            name: "Oliver",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "17",
+            name: "Constantin Ludewigt",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "18",
+            name: "Sara Disch",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "19",
+            name: "Lissy Blume",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "20",
+            name: "Theresa Hoch",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "21",
+            name: "David Schätzle",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "22",
+            name: "David Schätzle",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "23",
+            name: "Manuel",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
+        {
+            id: "22",
+            name: "Nils Weiskopf",
+            position: "Leiter",
+            geburtstag: "17.04.2001",
+            lieblingsessen: "Pizza",
+            lieblingsfilm: "Halloween",
+            spitzname: "Jule",
+            beitritt: "2017",
+            foto: "src/static/img/leiterfill.svg"
+        },
         ]
 
 function leiterTemplate(leiter) {
