@@ -26,10 +26,11 @@ const leiterData = [
             name: "Neomi Rottberger",
             position: "Pfarrjugendleitung",
             geburtstag: "05.06.2002",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Neomi",
-            beitritt: "2018",
+            lieblingsessen: "Pommesburger",
+            lieblingsfilm: "Wunder",
+            spitzname: "Nemo",
+            beitritt: "2017",
+            lieblingstier: "Otter",
             foto: "src/static/img/leiterfill.svg"
         },
         {   
@@ -299,8 +300,33 @@ function popupHandler(key) {({
         console.log(filteredData)
         const leiterPop = document.getElementById("leiterPopup");
         leiterPop.classList.remove("hide");
-
-        return leiterPop.innerHTML = `
+        const lieblingstier = filteredData.lieblingstier
+        if (lieblingstier) {
+             return leiterPop.innerHTML = `
+        <div class="popupBG" id="PopUpId" style="display:flex;">
+        <div class="LeiterPopup">
+            <div class="Pupupimg">
+                <img src="${filteredData.foto}">
+            </div>
+            <span class="position">${filteredData.position}</span>
+            <h1 class="Popupheading">${filteredData.name}</h1>
+            <div class="PopInfo">
+            <p><strong>Geburtstag: </strong>${filteredData.geburtstag}</p>
+            <p><strong>Lieblingsessen: </strong>${filteredData.lieblingsessen}</p>
+            <p><strong>Lieblingsfilm: </strong>${filteredData.lieblingsfilm}</p>
+            <p><strong>Spitzname: </strong>${filteredData.spitzname}</p>
+            <p><strong>Lieblingstier: </strong>${filteredData.lieblingstier}</p>
+            <p><strong>Beitritt in der KJG: </strong>${filteredData.beitritt}</p>
+            <br>
+            <div class="close" id="close">
+                <img src="src/static/img/close.svg">
+            </div>
+            </div>
+        </div>
+        </div>`   
+        } else {
+                
+                return leiterPop.innerHTML = `
         <div class="popupBG" id="PopUpId" style="display:flex;">
         <div class="LeiterPopup">
             <div class="Pupupimg">
@@ -321,7 +347,7 @@ function popupHandler(key) {({
             </div>
         </div>
         </div>`
-        
+        }
 };
 
 const leiterPop = document.getElementById("leiterPopup");
