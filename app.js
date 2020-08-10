@@ -152,6 +152,7 @@ const leiterData = [
             lieblingsfilm: "Halloween",
             spitzname: "Jule",
             beitritt: "2017",
+            lieblingstier: "Katze",
             foto: "src/static/img/leiterfill.svg"
         },
         {
