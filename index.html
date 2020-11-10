@@ -41,36 +41,127 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div id="leiterlist"></div>
-    <div id="leiterPopup"></div>
+    
+    <!-- Willkommen Section -->
+    <div id="home" class="Section">
+        <h1> Willkommen auf unserer Homepage!</h1>
+        <br>
+        <p>Hier finden Sie Informationen zu unseren Gruppenstunden <br> sowie unserem alljährlichen Sommerlager.</p>
+        <br>
+        <br>
+        <br>
+        <a href="#sommerlager" class="btn">Jetzt Entdecken</a>
+    
+    </div>
 
+
+
+    <!-- Sommerlager -->
+    <div id="sommerlager" class="SectionBG">
+    <div class="Section3">
+    <h1>Das Sommerlager</h1>
+    <br>
+        <div class="info">
+            <img src="src/static/img/error.svg">
+            <h3>Info</h3>
+            <p style="color: #353535">Unser Sommerlager 2021 ist bereits in Planung, aufgrund der aktuellen Situation können wir noch für kein Lager garantieren.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="SectionBGW">
+        <div class="Section2"> 
+            <h1 id="gruppenstunde" style="margin-bottom: 10px;">Gruppenstunden</h1>
+            <p>Unsere wöchentlichen Gruppenstunden werden von 2-3 Leitern je Gruppenstunde gestaltet damit die Kinder ein möglichst abwechslungsreiches und ausergewöhnliches Programm geboten bekommen.</p>
+                <br>
+                <br>
+            <div class="gruppenstunden">
+                <div class="gruppenstunde">
+                    <h3>Mädchen Gruppenstunde</h3>
+                    <br>
+                    <p>Freitags: 16:00 — 18:00 Uhr</p>
+                </div>
+                <div class="gruppenstunde">
+                    <h3>Jungs Gruppenstunde</h3>
+                    <br>
+                    <p class="badge">In Planung</p>
+                    <p>Donnerstags: 16:30 — 17:30 Uhr</p>
+                </div>
+            </div>
+            <br>
+            <div class="info">
+                <img src="src/static/img/error.svg">
+                <h3>Info</h3>
+                <p style="color: #353535">Aufgrund der aktuellen Situation können keine Gruppenstunden stattfinden. (stand: 11.11.2020)</p>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 5px;">Sie hast Interesse Mitglied zu werden ?</h3>
+                    <p>Sie wollen ihr Kind für unsere Gruppenstunde anmelden ?</p>
+                    <br>
+                        <a class="btn" href="src/static/img/KJG ANMELDUNG.pdf" download><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/></svg> Anmeldung</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Die Leiter -->
+    <div class="SectionBG">
+    <div class="Section2"> 
+        <h1 id="leiter">Die Leiter</h1>
+        <div id="leiterlist"></div>
+        <div id="leiterPopup"></div>
+    </div>
+    </div>
+
+
+    <!-- Kontakt -->
+
+    <div id="kontakt" class="SectionBGW">
+        <div class="Section3">
+            <div>
+                <h1 style="margin-bottom: 5px;">Kontakt</h1>
+                <p>Bei Organisatorischen Fragen oder fragen rund um die KjG können Sie uns gerne schreiben.</p>
+            </div>
+            <br>
+            <div>
+               <a class="btn" hreF="mailto:kjgkollnau@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>Nachricht</a>
+               <br>
+               <p style="font-style: italic;">Bitte beachten Sie unsere <a href="datenschutz.html">Datenschutzerklärung</a> bei einer Anfrage über Email.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+        <a href="impressum.html">Impressum</a>
+    </div>
     <!-- JavaScript einbindungen -->
-    <script src="app.js"></script>
+<script src="app.js"></script>
 
-    <!-- inline Scripts -->
-    <script>
+<!-- inline Scripts -->
+<script>
     var popupBg = document.querySelector(".popupContainer"); 
     var popup = document.querySelector(".helloPopup");
     var firstpopup = document.getElementById("firstPop");
-    
+        
     setTimeout (function() {
     popupBg.classList.add("animateOut");
     firstpopup.remove("firstPop");},
     2500);
-    
+        
     setTimeout (function() {
     popup.classList.add("popupOut") },
     2000);
-
-    </script>
-
-    <script>
+</script>
+    
+<script>
     var hamburger = document.getElementById('hamburger');    
     var menu = document.getElementById('menu');
     var cross = document.getElementById('cross');
-
-    document.getElementById('hamburger').addEventListener('click', navStatus);
-
+    
+        document.getElementById('hamburger').addEventListener('click', navStatus);
+    
     function navStatus() {
         if (cross.classList.contains('onClick')) {
             cross.classList.remove("onClick");
@@ -83,7 +174,7 @@
             menu.setAttribute("style", "display: flex;");
         }
     }
-    </script>
+</script>
 
 </body>
 </html>

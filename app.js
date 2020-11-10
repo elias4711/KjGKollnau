@@ -15,7 +15,7 @@ const leiterData = [
             name: "Lea Gmirek",
             position: "Pfarrjugendleitung",
             geburtstag: "26.06.2001",
-            lieblingsessen: "Pizza",
+            lieblingsessen: "Sushi",
             lieblingsfilm: "Love Rosie",
             spitzname: "Le",
             beitritt: "2017",
@@ -74,28 +74,6 @@ const leiterData = [
             lieblingsessen: "Pizza",
             lieblingsfilm: "Halloween",
             spitzname: "Bekki",
-            beitritt: "2016",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "7",
-            name: "Magdalena Herr",
-            position: "Leiter",
-            geburtstag: "28.08.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Magdi",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {   
-            id: "8",
-            name: "Sophia Großmann",
-            position: "Leiter",
-            geburtstag: "27.07.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Zophia",
             beitritt: "2016",
             foto: "src/static/img/leiterfill.svg"
         },
@@ -167,30 +145,8 @@ const leiterData = [
             foto: "src/static/img/leiterfill.svg"
         },
         {
-            id: "15",
-            name: "Sofia Timm",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
             id: "16",
-            name: "Oliver",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "17",
-            name: "Constantin Ludewigt",
+            name: "Oliver Hornauer",
             position: "Leiter",
             geburtstag: "17.04.2001",
             lieblingsessen: "Pizza",
@@ -202,17 +158,6 @@ const leiterData = [
         {
             id: "18",
             name: "Sara Disch",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "19",
-            name: "Lissy Blume",
             position: "Leiter",
             geburtstag: "17.04.2001",
             lieblingsessen: "Pizza",
@@ -235,39 +180,6 @@ const leiterData = [
         {
             id: "21",
             name: "David Schätzle",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "22",
-            name: "David Schätzle",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "23",
-            name: "Manuel",
-            position: "Leiter",
-            geburtstag: "17.04.2001",
-            lieblingsessen: "Pizza",
-            lieblingsfilm: "Halloween",
-            spitzname: "Jule",
-            beitritt: "2017",
-            foto: "src/static/img/leiterfill.svg"
-        },
-        {
-            id: "22",
-            name: "Nils Weiskopf",
             position: "Leiter",
             geburtstag: "17.04.2001",
             lieblingsessen: "Pizza",
